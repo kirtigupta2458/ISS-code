@@ -16,7 +16,7 @@ export default class HomeScreen extends Component {
         return (
             <View style={styles.container}>
                 <SafeAreaView style={styles.droidSafeArea} />
-                <ImageBackground source={require('../assets/bg.png')} style={styles.backgroundImage}>
+               
                     <View style={styles.titleBar}>
                         <Text style={styles.titleText}>ISS Tracker App</Text>
                     </View>
@@ -26,8 +26,8 @@ export default class HomeScreen extends Component {
                     }>
                         <Text style={styles.routeText}>ISS Location</Text>
                         <Text style={styles.knowMore}>{"Know More --->"}</Text>
-                        <Text style={styles.bgDigit}>1</Text>
-                        <Image source={require("../assets/iss_icon.png")} style={styles.iconImage}></Image>
+                        
+                        
                     </TouchableOpacity>
 
                     <TouchableOpacity style={styles.routeCard} onPress={() =>
@@ -35,11 +35,10 @@ export default class HomeScreen extends Component {
                     }>
                         <Text style={styles.routeText}>Meteors</Text>
                         <Text style={styles.knowMore}>{"Know More --->"}</Text>
-                        <Text style={styles.bgDigit}>2</Text>
-                        <Image source={require("../assets/meteor_icon.png")} style={styles.iconImage}></Image>
+                        
                     </TouchableOpacity>
 
-                </ImageBackground>
+                
             </View>
         )
     }
